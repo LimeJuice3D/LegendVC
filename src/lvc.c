@@ -4,7 +4,7 @@
 #include <sys/stat.h>
 #include <dirent.h>
 
-#include "../third-party/cJSON/cJSON.h"
+#include "third-party/cJSON/cJSON.h"
 
 #define LVC_DIR ".lvc"
 #define LVC_DIR_LEN 4

@@ -1,5 +1,5 @@
 CC = clang
-CFLAGS = -Wall -Wvla -Werror -gdwarf-4 -Lthird-party/ -lcjson
+CFLAGS = -Wall -Wvla -Werror -gdwarf-4 
 
 .PHONY: asan msan nosan
 
@@ -14,8 +14,8 @@ nosan: all
 .PHONY: all
 all: lvc
 
-lvc: src/lvc.c
-	$(CC) $(CFLAGS) -o lvc src/lvc.c
+lvc: src/lvc.c src/third-party/cJSON/cJSON.c
+	$(CC) $(CFLAGS) -o lvc src/lvc.c src/third-party/cJSON/cJSON.c
 
 .PHONY: clean
 clean:
