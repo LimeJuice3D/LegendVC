@@ -1,0 +1,10 @@
+Repo metadata
+  Branches (list)
+    Branch 1
+      Branch metadata
+      Commits (list)
+        Commit metadata
+        Files (list)
+          File metadata
+          Pointer to file
+        
