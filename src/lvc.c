@@ -173,6 +173,7 @@ void print_help() {
         "usage: lvc [-h | <command>]\n\n"
         "Commands:\n"
         "init - Initialize version control - Usage: lvc init [name]\n"
+        "branch - Manage branches - Usage: lvc branch <add|remove> (name)"
     );
 
     return;
